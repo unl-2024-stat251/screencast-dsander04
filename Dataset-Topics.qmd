@@ -1,5 +1,5 @@
 ---
-author: "Your Name"
+author: "Dominic Sander"
 date: "2023-04-18"
 title: "Project Dataset and Topics"
 output: html
@@ -10,14 +10,14 @@ categories: project
 
 Things you plan to investigate using this dataset:
 
-- Thing 1
-- Thing 2
-- Thing 3
+- The catchphrases said by the gang throughout the show's airing - could break it up by tv series - break it up by character - summarizing
+- Air date of every episode/movie - compare number of episodes/movies aired by decade
+- Visualize pretty much everything I can
 
 Stat 251 topics you plan to cover during the analysis:
 
-1. Topic 1
-2. Topic 2
-3. Topic 3
-4. Topic 4
+1. Catchphrases said
+2. Dates of airing (could sort by decade)
+3. What characters were caught by villains - could compare to what characters caught the villains
+4. The voice actors - how many episodes/which characters were voiced
 

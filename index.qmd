@@ -1,5 +1,5 @@
 ---
-author: "Your Name"
+author: "Dominic Sander"
 date: "2023-05-04"
 title: "Project: Screencast"
 output: html
@@ -43,3 +43,7 @@ There will be three deliverables for this project:
 
 In lieu of the final exam, you will peer review two classmates' screencasts. 
 
+```{R}
+scoobydoo <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-07-13/scoobydoo.csv')
+
+```
