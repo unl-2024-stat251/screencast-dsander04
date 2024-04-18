@@ -5,4 +5,28 @@ title: "Screencast Pseudocode"
 output: html
 categories: project
 ---
+```{R}
+
+
+```
+
+```{R}
+
+
+```
+
+```{R}
+
+
+```
+
+```{R}
+
+
+```
+
+```{R}
+
+
+```
 
