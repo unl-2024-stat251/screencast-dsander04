@@ -5,28 +5,74 @@ title: "Screencast Pseudocode"
 output: html
 categories: project
 ---
-```{R}
 
+```{R}
+library(tidyverse)
+library(ggplot2)
+library()
+
+
+scoobydoo <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-07-13/scoobydoo.csv')
+```
+
+```{R}
+years <- scoobydoo %>%
+  select("date_aired", "format", "index") %>%
+  as.Date(date_aired)
+  
+  
+separate(date_aired)
+
+sixties <- mutate(year < 1970 & year>1959)
+seventies <- mutate(year < 1980 & year>1969)
+eighties <- mutate(year < 1990 & year>1979)
+nineties <- mutate(year < 2000 & year>1989)
+two-thousands <- mutate(year < 2010 & year>1999)
+twenty-tens <- mutate(year < 2020 & year>2009)
+twenty-twenties <- mutate(year < 2030 & year>2019)
 
 ```
 
 ```{R}
+catchphrases <- scoobydoo %>%
+  filter(if_it_wasnt_for, split_up, another_mystery, set_a_trap, jeepers, jinkies, my_glasses, just_about_wrapped_up, zoinks, groovy, scooby_doo_where_are_you, rooby_rooby_roo)
 
+drop_na(catchphrases)
+filter(!"FALSE")
+filter(!"NULL")
+
+group_by(#column#)
+  
+rowSums(catchphrases)
+  
+ggplot(x=#columns, y=rowSums#) + geom_bar()
+  
 
 ```
 
 ```{R}
+voices <- scoobydoo %>%
+  select(fred_va, daphnie_va, velma_va, shaggy_va, scooby_va)
 
+scooby_function <- function(voices){
+  voices <- na.omit(voices)
+  
+unique_va <- sapply(scoobydoo, function(x) length(unique(x)))
+
+return(unique_va)
+  }
 
 ```
 
 ```{R}
+runtimes <- scoobydoo %>%
+  select("index","run_time","format") %>%
+  na.omit(run_time)
 
+total_time <- runtimes %>%
+  group_by(format) %>%
+  summarize(run_total = sum(run_time))
 
 ```
 
-```{R}
-
-
-```
-
+I have a lot of ideas written down, but here's a general outline of a few of them. I may end up adding more if I think I'm not going to make the necessary time. I know there's a lot wrong in every one of the code chunks, but I'll get all that cleaned up and running well for the final screencast!
